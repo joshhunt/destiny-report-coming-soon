@@ -39,7 +39,7 @@ function Scene({ scrollPosition, mouse }) {
 
   const scrollMax = size.height * 4.5
 
-  const firstTextPos = scrollPosition.interpolate(pos => [0, -1 + (pos * 3) / scrollMax, 0])
+  const firstTextPos = scrollPosition.interpolate(pos => [0, -1 + (pos * 7) / scrollMax, 0])
   const secondTextPos = scrollPosition.interpolate(pos => [0, -20 + ((pos * 10) / scrollMax) * 2, 0])
 
   const glitchFactor = scrollPosition.interpolate([0, scrollMax * 0.1, scrollMax * 0.4, scrollMax * 0.8, scrollMax * 0.99], [0, 0, 1, 1, 0.1])
